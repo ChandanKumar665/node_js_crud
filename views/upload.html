@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>upload</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  	<style type="text/css">
+  		.thumbnail {
+  			 	height: 75px;
+		    	border: 1px solid #000;
+		    	margin: 10px 5px 0 0;
+		    	width: 75px;
+  		}
+  	</style>
+</head>
+	<body>
+		<form method="post" enctype="multipart/form-data" action="/api/upload" id='uploadform'>
+			<div class="form-group">
+			   	<label for="address">Choose:</label>
+			   	<div class="row">
+			   
+			   		<div class="col-8">
+			   			<input type="file" class="form-control" id="file" name="foo">
+			   		</div>
+			   		<div class="col-4">
+			   			<span id='pic'>
+			   			
+			   			</span>
+			   		</div>
+			   	</div>
+		  	</div>
+		  	<button type="submit" id="add" class="btn btn-primary" value="Upload!">Add</button>
+		</form>
+	<script type="text/javascript" src="/public/js/add.js"></script>	
+	</body>
+</html>
